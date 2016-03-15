@@ -1,6 +1,11 @@
 export IMAGE_NAME=my-app3
 export path=`pwd`
 
+# windows requires double slashes
+if [[ $OSTYPE == 'msys' ]]; then
+  export path=`echo $path | sed -e "s#/#//#"`
+fi
+
 docker stop $IMAGE_NAME
 docker rm $IMAGE_NAME
 docker rmi $IMAGE_NAME
