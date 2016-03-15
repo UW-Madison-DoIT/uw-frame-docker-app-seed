@@ -9,7 +9,7 @@ This is a "seed" project intended to be used as a template for creating "Apps" i
 ### Fire it up
 + `git clone git@github.com:UW-Madison-DoIT/uw-frame-docker-app-seed.git my-app-name`
 + `cd my-app-name`
-+ `./run.sh` (if you are on windows look at the run.sh, should be easy to take out the good parts)
++ `./run.sh` (if you are on Windows, use Docker Toolbox (which bundles git bash) to run run.sh)
 
 The docker file as it exists runs a [superstatic](https://www.npmjs.com/package/superstatic) server. The my-app directory and the 2 files in js are volumed in (a docker thing).
 
